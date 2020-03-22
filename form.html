@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+    <head>
+    <title> submission form</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="" type="" href="./process.js">
+    </head>
+    <body>
+        <div class="form-container">
+            
+            <h1>Form Validation</h1>
+            
+            <form  class="form-style">
+                Name: <input type="text" name="intro"/>
+                <br/><br/>
+                username: <input type="text" name="username"/>
+                <br/><br/>
+                password: <input type="password" name="pass"/>
+                <br/><br/>
+                re-password: <input type="password" name="pass"/>
+                <br/><br/>
+                gender: 
+                        <input type="radio" name="gender" value="male"/>male
+                        <input type="radio" name="gender" value="female"/>female   
+                        <input type="radio" name="gender" value="other"/>others
+                <br/><br/>
+                Programming skills:
+                        <input type="checkbox" name="skills"/>Java       
+                        <input type="checkbox" name="skills"/>Android
+                        <input type="checkbox" name="skills"/>Ruby
+                        <input type="checkbox" name="skills"/>.Net
+                <br/><br/>
+                Contact no: <input type="number" name="ph number"/>
+                email: <input type="email" name="emailid"/>
+                <br/><br/>
+                College: 
+                <select id="cars" name="cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                <br/><br/>
+                <input type="submit" (click)="function-submit()" value="submit"/>
+            </form>
+        </div>
+    </body>
+</html>

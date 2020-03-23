@@ -3,45 +3,56 @@
     <head>
     <title> submission form</title>
     <link rel="stylesheet" type="text/css" href="./style.css">
-    <link rel="" type="" href="./process.js">
+    <script src="./process.js"> </script>
     </head>
     <body>
         <div class="form-container">
             
             <h1>Form Validation</h1>
             
-            <form  class="form-style">
-                Name: <input type="text" name="intro"/>
-                <br/><br/>
-                username: <input type="text" name="username"/>
-                <br/><br/>
-                password: <input type="password" name="pass"/>
-                <br/><br/>
-                re-password: <input type="password" name="pass"/>
-                <br/><br/>
-                gender: 
-                        <input type="radio" name="gender" value="male"/>male
-                        <input type="radio" name="gender" value="female"/>female   
-                        <input type="radio" name="gender" value="other"/>others
-                <br/><br/>
-                Programming skills:
-                        <input type="checkbox" name="skills"/>Java       
-                        <input type="checkbox" name="skills"/>Android
-                        <input type="checkbox" name="skills"/>Ruby
-                        <input type="checkbox" name="skills"/>.Net
-                <br/><br/>
-                Contact no: <input type="number" name="ph number"/>
-                email: <input type="email" name="emailid"/>
-                <br/><br/>
-                College: 
-                <select id="cars" name="cars">
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="fiat">Fiat</option>
-                    <option value="audi">Audi</option>
+            <form onsubmit="return results();" class="form-style">
+                <strong> Name:</strong> <input  id="name" type="text" name="name"/>
+                <br/><br/><br/>
+                <strong> Username:</strong> <input id="username" type="text" name="username"/>
+                <br/><br/><br/>
+                <strong> password:</strong> <input type="password" name="pass"/>
+                <br/><br/><br/>
+                <strong>retype-password:</strong> <input type="password" name="pass"/>
+                <br/><br/><br/>
+                <strong>gender: </strong>
+                        <input id="male" type="radio" name="gender" value="male" />male
+                        <input id="female" type="radio" name="gender" value="female" />female   
+                        <input id="others" type="radio" name="gender" value="others"/>others
+                <br/><br/><br/>
+               
+                    <strong>Programming skills:</strong>
+                        <input id="skills" type="checkbox" name="skills" value="Java,"/>Java       
+                        <input id="skills" type="checkbox" name="skills" value="Android,"/>Android
+                        <input id="skills" type="checkbox" name="skills" value="Ruby,"/>Ruby
+                        <input id="skills" type="checkbox" name="skills" value=".Net,"/>.Net
+               
+                
+                <br/><br/><br/>
+                <strong>Contact no:</strong> <input id="ph number" type="number" name="ph number"/>
+                <br/></br><br/>
+                <strong>email:</strong> <input id="email" type="email" name="emailid"/>
+                <br/><br/><br/>
+                <strong>Address:</strong> <input id="address" type="text" name="address"/>
+                <br/><br/><br/>
+                <strong>State:</strong> <input id="state" type="text" name="state"/>
+                <br/><br/><br/>
+                <strong>Country:</strong> <input id="country" type="text" name="country"/>
+                <br/><br/><br/>
+                <strong>College:</strong> 
+                <select id="college" name="College">
+                    <option  value="abc">abc</option>
+                    <option  value="def">def</option>
+                    <option  value="xyz">xyz</option>
+                    <option  value="thf">thf</option>
+                    <option  value="others">others</option>
                   </select>
-                <br/><br/>
-                <input type="submit" (click)="function-submit()" value="submit"/>
+                <br/><br/><br/> 
+                <input type="submit" id="submit"  value="submit"/>
             </form>
         </div>
     </body>

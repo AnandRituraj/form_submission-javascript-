@@ -1,15 +1,27 @@
-body{
 
-background-color: gray;
+body{
+    background-image: url(./form_image.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .form-container{
-    width: 50%;
-    margin: 0 auto;
+    width: 40%;
+    margin: auto;
+    margin-top: 20px;
     background-color: honeydew;
     padding: 10px;
+    border-radius: 10px;
+    
 }
 
 .form-style{
     padding: 20px;
+    
+}
+
+h1{
+    margin-left: 170px;
+    color: blueviolet;
+    text-decoration: underline;
 }
